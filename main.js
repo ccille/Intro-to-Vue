@@ -3,7 +3,7 @@ const app = Vue.createApp({
         return {
             cart: 0,
             product: 'Socks',
-            // productDescription: 'You can choose a color for your',
+            // productDescription: 'You can choose a color for your socks',
             image: './assets/images/socks_blue.jpg',
             inventory: 8,
             onSale: true,
@@ -18,6 +18,13 @@ const app = Vue.createApp({
         addToCart(){
             this.cart += 1
         },
+        
+        removeFromCart(){
+            if (this.cart >= 1) {
+                this.cart -= 1
+            }
+        },
+        
         updateImage(variantImage){
             this.image = variantImage
         }
