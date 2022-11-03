@@ -5,7 +5,7 @@ const app = Vue.createApp({
             product: 'Socks',
             // productDescription: 'You can choose a color for your socks',
             image: './assets/images/socks_blue.jpg',
-            inventory: 0,
+            inventory: 20,
             onSale: true,
             details: ['50% cotton', '30% wool', '20% poluester'],
             sizes: ['S', 'M', 'L'],
